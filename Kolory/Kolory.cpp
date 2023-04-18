@@ -2,7 +2,6 @@
 //
 
 #include <iostream>
-#include <conio.h>
 #include <Windows.h>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
@@ -13,7 +12,10 @@
 #include <cassert>
 #include <locale.h>
 
+#include "gracz.h"
+
 using namespace std;
+
 
 struct Gracz {
     string imie;
@@ -21,7 +23,7 @@ struct Gracz {
     int portfel = 0; //kasa z wygranych rund
 };
 
-struct Gracz gracze[3];
+Gracz gracze[3];
 
 int kolejka = 0;
 
@@ -108,6 +110,9 @@ int main()
     vector<string> hasla;
     int j;
 
+   
+
+
     ifstream strum;
     strum.open("dane.txt");
 
@@ -148,7 +153,7 @@ int main()
     n = haslo.size();
 
     gracze[0].imie = "Bryanusz";
-    gracze[1].imie = "Jessica ";
+    gracze[1].imie = "Jessica";
     gracze[2].imie = "Nepomucen";
 
     for (i = 0; i < n; i++)
@@ -164,7 +169,7 @@ int main()
 
     do
     {
-        // cout << "\033[2J";
+        cout << "\033[2J";
 
         cout << "\033[47m" << "\033[31m";
         for (i = 0; i < n; i++)

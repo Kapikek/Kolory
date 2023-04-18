@@ -18,10 +18,36 @@
     <ClCompile Include="Kolory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gracz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kolo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="haslo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="dane.txt">
       <Filter>Resource Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gracz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kolo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="haslo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
