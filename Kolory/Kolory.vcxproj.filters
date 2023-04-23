@@ -30,6 +30,9 @@
     <ClCompile Include="haslo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Final.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="dane.txt">

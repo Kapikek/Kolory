@@ -12,13 +12,14 @@ using namespace std;
 
 class gra
 {
+	
 public:
 
 	gracz gracze[3];
 
 
 
-
+	
 	gra(string g1, string g2, string g3);
 
 
