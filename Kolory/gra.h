@@ -1,6 +1,8 @@
 
 #include <iostream>
 #include <string> 
+#include <Windows.h>
+
 
 using namespace std;
 
@@ -12,16 +14,23 @@ using namespace std;
 
 class gra
 {
+
+private:
 	
+	
+	haslo haslo;
+	string Haslo = haslo.Haslo;
+	string proba;
+	kolo Kolo;
+	gracz gracze[3];
+	int suma = 0;
+
 public:
 
-	gracz gracze[3];
-
-
-
-	
-	gra(string g1, string g2, string g3);
-
+	void gra_init();
+	void print_board();
+	char WczytajWybor();
+	void zgaduj_haslo();
 
 };
 

@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include <Windows.h>
-#include <stdlib.h>     /* srand, rand */
-#include <time.h>       /* time */
+#include <stdlib.h>     //srand, rand 
+#include <time.h>       // time
 #include <string>  
 #include <fstream>
 #include <vector>
@@ -12,11 +12,13 @@
 #include <cassert>
 #include <locale.h>
 
-#include "gracz.h"
+
+#include "gra.h"
+
 
 using namespace std;
 
-
+/*
 struct Gracz {
     string imie;
     int kasa = 0;
@@ -89,10 +91,18 @@ char WczytajWybor()
     return wybor;
 
 }
-
+*/
 
 int main()
 {
+    
+    gra nowa_gra;
+    
+    nowa_gra.gra_init();
+
+
+
+    /*
     int i;
 
     string haslo; // = "wielka antarktyda";
@@ -335,4 +345,9 @@ int main()
 
     textPlayers();
     Beep(523, 500);
+    
+    */
+    
+    
+
 }

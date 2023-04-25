@@ -31,7 +31,8 @@ char haslo::WczytajZnak()
 }
 
 haslo::haslo() {
-
+    
+    
     vector<string> hasla;
     int j = 0;
 
@@ -51,7 +52,7 @@ haslo::haslo() {
     }
 
     strum.close();
-
+    
     assert(hasla.size() > 0);
     j = rand() % hasla.size(); // losujemy j-te haslo z przedzialu 0 ... size - 1
     //cout << hasla[j];
@@ -66,7 +67,7 @@ haslo::haslo() {
         else
             maska[i] = 1;
     }
-
+    
 }
 
 void haslo::print_haslo() {
@@ -89,3 +90,25 @@ void haslo::print_haslo() {
 
 
 }
+
+void haslo::print_maska() {
+
+    cout << "\033[2J";
+
+    cout << "\033[47m" << "\033[31m";
+    for (int i = 0; i < n; i++)
+    {
+
+        if (maska[i] == 1)
+            cout << ".";
+        else
+            cout << Haslo[i];
+    }
+
+    cout << "\033[0m";
+    cout << endl;
+
+
+
+}
+

@@ -127,9 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Final.cpp" />
     <ClCompile Include="gra.cpp" />
-    <ClCompile Include="gracz.cpp" />
     <ClCompile Include="haslo.cpp" />
     <ClCompile Include="kolo.cpp" />
     <ClCompile Include="Kolory.cpp" />
