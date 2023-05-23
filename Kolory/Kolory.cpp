@@ -98,6 +98,7 @@ int main()
     
     gra nowa_gra;
     
+
     nowa_gra.gra_init();
 
 

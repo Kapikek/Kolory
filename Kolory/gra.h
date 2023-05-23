@@ -1,16 +1,17 @@
 
-#include <iostream>
-#include <string> 
-#include <Windows.h>
 
 
-using namespace std;
 
 
 #include "gracz.h"
 #include "haslo.h"
 #include "kolo.h"
 
+
+using namespace std;
+#include <iostream>
+#include <string> 
+#include <Windows.h>
 
 class gra
 {
@@ -24,6 +25,7 @@ private:
 	kolo Kolo;
 	gracz gracze[3];
 	int suma = 0;
+	int i=0;
 
 public:
 
@@ -31,6 +33,10 @@ public:
 	void print_board();
 	char WczytajWybor();
 	void zgaduj_haslo();
+	
+
+
+
 
 };
 

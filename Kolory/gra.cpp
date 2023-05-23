@@ -5,11 +5,24 @@
 
 
 
-void gra::gra_init() {
 
+
+void gra::gra_init() {
+    /*
     gracze[0].imie = "Bryanusz";
     gracze[1].imie = "Jessica  ";
     gracze[2].imie = "Nepomucen";
+    */
+    gracz g1,g2,g3;
+    cin >> g1;
+    cin >> g2;
+    cin >> g3;
+    gracze[0] = g1;
+    gracze[1] = g2;
+    gracze[2] = g3;
+
+
+
 
     do {
 
@@ -30,6 +43,7 @@ void gra::gra_init() {
 
         //cout << gracze[kolejka].imie << " " << endl;
         print_board();
+
 
         cout << "1. zgaduj haslo" << endl;
         cout << "2. krecenie kolem" << endl;
@@ -121,14 +135,15 @@ void gra::gra_init() {
 
 }
 
-void gra::print_board(){
+void gra::print_board(){  
     int i;
     std::cout << "\n";
     for (i = 0; i < 3; i++) {
         if (i == Kolo.kolejka) {
             cout << "\033[1;34m";
         }
-        cout << gracze[i].imie << "\t" << gracze[i].kasa << "\n";
+        //cout << gracze[i].imie << "\t" << gracze[i].kasa << "\n";
+        cout << &gracze[i];
         cout << "\033[0m";
 
     }
